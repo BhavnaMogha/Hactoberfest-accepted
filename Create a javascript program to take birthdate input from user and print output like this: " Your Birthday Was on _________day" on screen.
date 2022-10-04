@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Print day of birth</title>
+</head>
+<body>
+<script>
+var dob = prompt("Enter your Date of Birth (e.g. November 27, 2001)", "Month DD, YYYY");
+var day = new Date(dob).getDay();
+switch(day)
+{
+case 0: document.write("You was born on <B>Sunday</B>");
+break;
+case 1: document.write("You was born on <B>Monday</B>")
+break;
+case 2: document.write("You was born on <B>Tuesday</B>")
+break;
+case 3: document.write("You was born on <B>Wednesday</B>")
+break;
+case 4: document.write("You was born on <B>Thursday</B>")
+break;
+case 5: document.write("You was born on <B>Friday</B>")
+break;
+case 6: document.write("You was born on <B>Saturday</B>")
+break;
+default:
+document.write("Please enter input in given format..");
+}
+
+</script>
+</body>
+</html>
